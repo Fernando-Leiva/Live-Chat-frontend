@@ -1,6 +1,15 @@
 .App {
   display: flex;
   flex: 1;
-  min-height: 100vh;
+  flex-direction: column;
+  justify-items: center;
+  background-color: beige;
+ 
+}
+
+.input{
+  margin-top: 100px;
+ 
+  justify-self: flex-end;
 }
 

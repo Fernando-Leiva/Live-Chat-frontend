@@ -1,0 +1,21 @@
+
+.containerM{
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    min-height: 70px;
+    flex-direction: row;
+    border-radius: 30px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.imagen{
+    display: flex;
+    align-items: center;
+}
+.containerM > span{
+    display: flex;
+    color: white;
+    text-align: justify;
+    margin-left: 15px;
+    align-items: center;
+}
