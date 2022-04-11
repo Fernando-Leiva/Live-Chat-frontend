@@ -1,18 +1,35 @@
 
 .containerM{
     display: flex;
+    flex: 1;
     width: 300px;
     flex-wrap: wrap;
-    min-height: 70px;
-    flex-direction: row;
+    min-height: 50px;
+    flex-direction: column;
     border-radius: 30px;
     border: 2px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
 }
-.imagen{
+.containerM > div {
+    display: flex;
+    margin-left: 10px;
+    margin-top: -5px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.containerM  > h6 {
+
+    display: flex;
+    margin-left: 10px;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+}
+.containerM > div > section{
     display: flex;
     align-items: center;
 }
-.containerM > span{
+.containerM > div > span{
     display: flex;
     color: white;
     text-align: justify;

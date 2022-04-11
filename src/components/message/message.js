@@ -1,7 +1,7 @@
 import React from "react";
 import "./Styles.css"
 
-export const Message = ({message = '',img,colorUser='gray'}) => {
+export const Message = ({message = {msg:''},img,colorUser='gray'}) => {
 
     const style = {
         backgroundColor : colorUser
@@ -9,8 +9,11 @@ export const Message = ({message = '',img,colorUser='gray'}) => {
     
     return(
         <div className="containerM" style={style}>
-            <img className="imagen" src={img} width={40} height={45} alt="Avatar"/>
-            <span>{message}</span>
+            <h6>{` ${message.user} `}</h6>
+            <div>
+                <section> <img className="imagen" src={img} width={40} height={45} alt="Avatar"/></section>
+                <span>{message.msg}</span>
+            </div>     
         </div>
     )
 }
