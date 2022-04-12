@@ -49,7 +49,7 @@ function App() {
         <div className='body'> 
         {
           messages && messages.length > 0 && messages.map((message,index) => {
-            return <section key={index} > <Message img={user} colorUser="green" message={message}/> </section> 
+            return <section key={index} style={{display:'flex', flexDirection:'row',justifyContent: message.user==='Me'? 'flex-start' :'flex-end'}} > <Message img={user} colorUser={message.user==="Me"? "gray":'green'} message={message}/> </section> 
           })
         }   
         </div>

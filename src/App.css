@@ -14,7 +14,9 @@
 }
 
 .body{
-  min-height: 90%;
+  margin-top: 10px;
+  padding-inline: 30px;
+  min-height: 88%;
 }
 
 

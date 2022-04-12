@@ -1,7 +1,7 @@
 
 .containerM{
     display: flex;
-    flex: 1;
+   
     width: 300px;
     flex-wrap: wrap;
     min-height: 50px;
@@ -17,9 +17,11 @@
     flex-direction: row;
     justify-content: flex-start;
 }
-.containerM  > h6 {
-
+.containerM  > span {
     display: flex;
+    justify-content: center;
+    margin-bottom: -3%;
+    height: 30px;
     margin-left: 10px;
     font-size: medium;
     font-weight: bold;

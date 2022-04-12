@@ -9,7 +9,7 @@ export const Message = ({message = {msg:''},img,colorUser='gray'}) => {
     
     return(
         <div className="containerM" style={style}>
-            <h6>{` ${message.user} `}</h6>
+            <span>{` ${message.user} `}</span>
             <div>
                 <section> <img className="imagen" src={img} width={40} height={45} alt="Avatar"/></section>
                 <span>{message.msg}</span>
