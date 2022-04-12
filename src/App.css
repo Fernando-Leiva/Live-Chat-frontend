@@ -4,13 +4,17 @@
   flex-direction: column;
   justify-items: center;
   background-color: beige;
+  min-height: 100vh;
  
 }
 
 .div{
   display: flex;
   flex-direction: column;
+}
 
+.body{
+  min-height: 90%;
 }
 
 

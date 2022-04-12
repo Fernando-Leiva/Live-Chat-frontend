@@ -4,11 +4,16 @@ import './Style.css'
 
 
 export const Header = (props) => {
-    const [userName, setUserName] = React.useState(props.user)
+
+    const handleClick = () => {
+        console.log("cliking",props.setShowModal)
+        props.setShowModal(true)
+    }
+    
     return (
-        <div className="container">
+        <div onClick={handleClick} className="container">
             <img src={user} alt="Avatar" height={40} sizes={40}/>
-            <span>{userName}</span>
+            <span>{props.user}</span>
         </div>
     )
 }

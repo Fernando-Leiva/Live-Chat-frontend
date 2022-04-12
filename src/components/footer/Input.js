@@ -18,8 +18,8 @@ export const Input = ({socket, setMessages, currentSocket }) => {
     return(
         <div className="containerinput">
             <section>
-                <input type='text' placeholder="escribe aqui!" defaultValue={message} onChange={e => setMessage(e.target.value)} autoFocus className="message" id="message" />
-                <button><FontAwesomeIcon target="message" icon={faPaperPlane}  onClick={handleSubmit} height={20} width={30} color="green"/></button>
+                <input type='text' placeholder="escribe aqui!" value={message} id="input" onChange={e => setMessage(e.target.value)} autoFocus className="message" id="message" />
+                <button onClick={handleSubmit}><FontAwesomeIcon  icon={faPaperPlane}  height={20} width={30} color="green"/></button>
             </section>
         </div>
     )
