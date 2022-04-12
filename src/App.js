@@ -5,7 +5,7 @@ import { Header } from './components/header/Header';
 import { Input } from './components/footer/Input';
 import io from 'socket.io-client';
 import React from 'react';
-import { CustomModal } from './components/modal/modal';
+
 
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
   return (
     
     <div className="App">
-      {/*   <CustomModal show={showModal} setUserTopName={setUserTopName} setShow={setShowModal}/> */}
+     
         <Header setShowModal={setShowModal} user={userTopName}/>
         
         <div className='body'> 
